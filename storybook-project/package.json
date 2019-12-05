@@ -1,4 +1,15 @@
 {
   "name": "storybook-project",
-  "version": "0.0.1"
+  "version": "0.0.1",
+  "dependencies": {
+    "vue": "^2.6.10"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.7.4",
+    "@storybook/vue": "^5.2.8",
+    "babel-loader": "^8.0.6",
+    "babel-preset-vue": "^2.0.2",
+    "vue-loader": "^15.7.2",
+    "vue-template-compiler": "^2.6.10"
+  }
 }
