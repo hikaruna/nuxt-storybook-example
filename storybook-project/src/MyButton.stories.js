@@ -1,13 +1,14 @@
 import Vue from 'vue';
-//import MyButton from './Button.vue';
+import MyButton from 'nuxt-project/components/MyButton.vue';
 
-export default { title: 'Button' };
+export default { title: 'MyButton' };
 
-export const withText = () => '<my-button>with text</my-button>';
+export const Default = () => ({
+  components: { MyButton },
+  template: '<my-button title="Default" />'
+});
 
-export const withEmoji = () => '<my-button>😀 😎 👍 💯</my-button>';
-
-// export const asAComponent = () => ({
-//   components: { MyButton },
-//   template: '<my-button :rounded="true">rounded</my-button>'
-// });
+export const WithEmoji = () => ({
+  components: { MyButton },
+  template: '<my-button title="😀 😎 👍 💯" />'
+});
